@@ -2,6 +2,9 @@
 #include <string.h>
 
 #define STR 128
+
+void lan_dec(char bf[] , char fname[] ,int n);
+
 /*************************************************/
 /*                                               
 /*				ƒƒCƒ“ŠÖ”
