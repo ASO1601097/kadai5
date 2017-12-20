@@ -42,7 +42,7 @@ int main(void){
 /*	デコード・表示処理、ファイル書き込み処理
 /*                                   
 /*************************************************/
-int lan_dec(char bf[] , char fname[] ,int n){
+void lan_dec(char bf[] , char fname[] ,int n){
 	
 	int i = 0;
 	int cnt = 0;
@@ -52,7 +52,6 @@ int lan_dec(char bf[] , char fname[] ,int n){
 	printf("復元後の文字列：");
 	if(fp == NULL){
 		printf("\aファイルをオープンできません\n");
-		return 1;
 	}
 	for(i = 0 ; i < n; i++){
 		if(bf[i] == '@'){
@@ -71,6 +70,5 @@ int lan_dec(char bf[] , char fname[] ,int n){
 		}
 	}
 	fclose(fp);
-	return 0;
 
 }
